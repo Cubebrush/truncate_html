@@ -19,7 +19,7 @@ module TruncateHtml
       |
       [#{TAG_BODY_CHARACTERS}]+ # Match tag body
       |
-      Unicode::Emoji::REGEX
+      [\u{10000}-\u{10FFFF}]
     }x.freeze
     def initialize(original_html)
       super(original_html)

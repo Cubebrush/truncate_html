@@ -217,7 +217,7 @@ This is ugly html.
   end
 
   it "doesn't gobble up emoji characters" do
-    input = '😁😈⛔🎐📌🔜🔴🇧🇻🇺🇬🇸🇦🇿🇦🗾🚋'
+    input = '🦑😁😈⛔🎐📌🔜🔴🇧🇻🇺🇬🇸🇦🇿🇦🗾🚋'
     output = truncate(input, length: 300)
     output.should == input
   end
